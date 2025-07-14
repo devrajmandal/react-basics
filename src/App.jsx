@@ -13,7 +13,10 @@
 // import { Practice } from "./components/Practice";
 // import { State } from "./components/hooks/State";
 
-import { Todo } from "./projects/Todo/Todo";
+// import { Todo } from "./projects/Todo/Todo";
+// import {ShortCircuit} from "./components/ShortCircuit";
+// import {Counter} from "./components/hooks/useState/index";
+import { Challenge } from "./components/hooks/useState/challenge";
 
 // export const App = () => {
 //   return (
@@ -37,7 +40,10 @@ import { Todo } from "./projects/Todo/Todo";
 export const App = () => {
   return (
     <section>
-      <Todo />
+      {/* <Todo /> */}
+      {/* <ShortCircuit/> */}
+      {/* <Counter/> */}
+      <Challenge/>
     </section>
   );
 };

@@ -14,7 +14,7 @@ export const Challenge = () => {
   };
   return (
     <div>
-      <p>count {count}</p>
+      <p>Count {count}</p>
       <label>
         Step:
         <input
@@ -23,11 +23,10 @@ export const Challenge = () => {
           onChange={(e) => setStep(Number(e.target.value))}
         />
       </label>
-
       <br />
       <br />
-      <button onClick={handleIncrement} disabled={count >= 100}>Increment</button>
-      <button onClick={handleDecrement} disabled={count <= 0}>Decrement</button>
+      <button onClick={handleIncrement} disabled={count>=100}>Increment</button>
+      <button onClick={handleDecrement} disabled={count<=0}>Decrement</button>
       <button onClick={handleReset}>Reset</button>
     </div>
   );

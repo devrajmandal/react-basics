@@ -17,7 +17,8 @@
 // import {ShortCircuit} from "./components/ShortCircuit";
 // import {Counter} from "./components/hooks/useState/index";
 // import { Challenge } from "./components/hooks/useState/challenge";
-import { RegistrationForm } from "./components/hooks/useState/Registration";
+// import { RegistrationForm } from "./components/hooks/useState/Registration";
+import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 
 // export const App = () => {
 //   return (
@@ -45,7 +46,7 @@ export const App = () => {
       {/* <ShortCircuit/> */}
       {/* <Counter/> */}
       {/* <Challenge/> */}
-      <RegistrationForm/>
+      <RegistrationFormReact/>
     </section>
   );
 };

@@ -5,6 +5,11 @@
 // import { EventProps } from "./components/EventProps";
 // import {EventPropagation} from "./components/EventPropagation";
 
+import { CleanUp } from "./components/hooks/UseEffect/CleanUp";
+// import { EffectChallenge } from "./components/hooks/UseEffect/EffectChallenge";
+
+// import { ReactUseEffect } from "./components/hooks/UseEffect";
+
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 
 // import { LiftStateUp } from "./components/LiftStateUp";
@@ -20,7 +25,7 @@
 // import { RegistrationForm } from "./components/hooks/useState/Registration";
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
-import { ContactForm } from "./components/hooks/useState/ContactForm";
+// import { ContactForm } from "./components/hooks/useState/ContactForm";
 
 // export const App = () => {
 //   return (
@@ -50,7 +55,10 @@ export const App = () => {
       {/* <Challenge/> */}
       {/* <RegistrationFormReact/> */}
       {/* <LoginForm/> */}
-      <ContactForm/>
+      {/* <ContactForm/> */}
+      {/* <ReactUseEffect/> */}
+      {/* <EffectChallenge/> */}
+      <CleanUp/>
     </section>
   );
 };

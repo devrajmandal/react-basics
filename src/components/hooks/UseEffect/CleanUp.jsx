@@ -4,10 +4,13 @@ export const CleanUp = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
-      setCount((prev) => prev + 1);
-    }, 1000);
-  }, []);
+    const timer=setInterval(() => {
+      setCount((prev) => prev+1);
+    },1000)
+
+    return () => clearInterval(timer);
+  },[])
+
   return (
     <div className="container">
       <div className="counter">

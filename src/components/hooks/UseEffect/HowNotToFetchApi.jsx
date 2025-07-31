@@ -1,18 +1,27 @@
-import { useState } from "react";
-import "./Pokemon.css";
+import { useEffect, useState } from "react";
+import "./pokemon.css";
 
 export const HowNotToFetchApi = () => {
   const [apiData, setApiData] = useState([]);
-  fetch("https://dummy-json.mock.beeceptor.com/continents")
-    .then((res) => res.json())
-    .then((data) => setApiData(data))
-    .catch((error) => console.log(error));
+  const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
+
+  const fetchPokemon = () => {
+    fetch(API)
+      .then((res) => res.json())
+      .then((data) => {
+        setApiData(data);
+      })
+      .catch((error) => console.log(error));
+  };
+  useEffect(() => {
+    fetchPokemon();
+  }, []);
+
   return (
     <div className="container effect-container">
       <ul>
-        data:
         {apiData.map((curElem) => {
-          return <li key={curElem.id}>{curElem.name}</li>;
+          return <li key={curElem.id}>{curElem.body}</li>;
         })}
       </ul>
     </div>

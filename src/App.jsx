@@ -6,7 +6,10 @@
 // import {EventPropagation} from "./components/EventPropagation";
 
 // import { HowNotToFetchApi } from "./components/hooks/UseEffect/HowNotToFetchApi";
-import { UseRef } from "./components/hooks/UseRef";
+// import { UseRef } from "./components/hooks/UseRef";
+
+// import { ForwardRef } from "./components/hooks/UseRef/ForwardRef";
+import {React19Input} from "./components/hooks/UseRef/React19Input";
 
 // import { CleanUp } from "./components/hooks/UseEffect/CleanUp";
 // import { EffectChallenge } from "./components/hooks/UseEffect/EffectChallenge";
@@ -63,7 +66,9 @@ export const App = () => {
       {/* <EffectChallenge/> */}
       {/* <CleanUp/> */}
       {/* <HowNotToFetchApi/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
+      {/* <ForwardRef/> */}
+      <React19Input/>
     </section>
   );
 };

@@ -9,7 +9,8 @@
 // import { UseRef } from "./components/hooks/UseRef";
 
 // import { ForwardRef } from "./components/hooks/UseRef/ForwardRef";
-import {React19Input} from "./components/hooks/UseRef/React19Input";
+// import {React19Input} from "./components/hooks/UseRef/React19Input";
+import { ParentComponent } from "./components/PropDrilling";
 
 // import { CleanUp } from "./components/hooks/UseEffect/CleanUp";
 // import { EffectChallenge } from "./components/hooks/UseEffect/EffectChallenge";
@@ -68,7 +69,8 @@ export const App = () => {
       {/* <HowNotToFetchApi/> */}
       {/* <UseRef/> */}
       {/* <ForwardRef/> */}
-      <React19Input/>
+      {/* <React19Input/> */}
+      <ParentComponent/>
     </section>
   );
 };

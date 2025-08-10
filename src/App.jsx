@@ -10,7 +10,10 @@
 
 // import { ForwardRef } from "./components/hooks/UseRef/ForwardRef";
 // import {React19Input} from "./components/hooks/UseRef/React19Input";
-import { ParentComponent } from "./components/PropDrilling";
+// import { ParentComponent } from "./components/PropDrilling";
+import { BioProvider } from "./components/hooks/ContextApi";
+import { About } from "./components/hooks/ContextApi/About";
+import { Home } from "./components/hooks/ContextApi/Home";
 
 // import { CleanUp } from "./components/hooks/UseEffect/CleanUp";
 // import { EffectChallenge } from "./components/hooks/UseEffect/EffectChallenge";
@@ -70,7 +73,11 @@ export const App = () => {
       {/* <UseRef/> */}
       {/* <ForwardRef/> */}
       {/* <React19Input/> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <BioProvider>
+        <Home />
+        <About />
+      </BioProvider>
     </section>
   );
 };

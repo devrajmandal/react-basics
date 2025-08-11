@@ -5,9 +5,10 @@
 // import { EventProps } from "./components/EventProps";
 // import {EventPropagation} from "./components/EventPropagation";
 
-import { BioProvider } from "./components/hooks/ContextApi";
+import { BioContext, BioProvider } from "./components/hooks/ContextApi";
 import { About } from "./components/hooks/ContextApi/About";
-import {Home} from "./components/hooks/ContextApi/Home";
+import { Home } from "./components/hooks/ContextApi/Home";
+import { Services } from "./components/hooks/ContextApi/Services";
 
 // import { HowNotToFetchApi } from "./components/hooks/UseEffect/HowNotToFetchApi";
 // import { UseRef } from "./components/hooks/UseRef";
@@ -15,8 +16,6 @@ import {Home} from "./components/hooks/ContextApi/Home";
 // import { ForwardRef } from "./components/hooks/UseRef/ForwardRef";
 // import {React19Input} from "./components/hooks/UseRef/React19Input";
 // import { ParentComponent } from "./components/PropDrilling";
-
-
 
 // import { CleanUp } from "./components/hooks/UseEffect/CleanUp";
 // import { EffectChallenge } from "./components/hooks/UseEffect/EffectChallenge";
@@ -77,9 +76,11 @@ export const App = () => {
       {/* <ForwardRef/> */}
       {/* <React19Input/> */}
       {/* <ParentComponent/> */}
+
       <BioProvider>
         <Home/>
         <About/>
+        <Services/>
       </BioProvider>
     </section>
   );

@@ -5,10 +5,12 @@
 // import { EventProps } from "./components/EventProps";
 // import {EventPropagation} from "./components/EventPropagation";
 
-import { BioContext, BioProvider } from "./components/hooks/ContextApi";
-import { About } from "./components/hooks/ContextApi/About";
-import { Home } from "./components/hooks/ContextApi/Home";
-import { Services } from "./components/hooks/ContextApi/Services";
+import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight";
+
+// import { BioContext, BioProvider } from "./components/hooks/ContextApi";
+// import { About } from "./components/hooks/ContextApi/About";
+// import { Home } from "./components/hooks/ContextApi/Home";
+// import { Services } from "./components/hooks/ContextApi/Services";
 
 // import { HowNotToFetchApi } from "./components/hooks/UseEffect/HowNotToFetchApi";
 // import { UseRef } from "./components/hooks/UseRef";
@@ -77,11 +79,15 @@ export const App = () => {
       {/* <React19Input/> */}
       {/* <ParentComponent/> */}
 
-      <BioProvider>
+      {/* <BioProvider>
         <Home/>
         <About/>
         <Services/>
-      </BioProvider>
+      </BioProvider> */}
+
+      <ThemeProvider>
+        <DarkLight/>
+      </ThemeProvider>
     </section>
   );
 };

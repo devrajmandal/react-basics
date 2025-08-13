@@ -1,4 +1,4 @@
-import { createContext, use, useState } from "react";
+import { Children, createContext, use, useContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
@@ -15,7 +15,6 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// creating a component
 export const DarkLight = () => {
   const { theme, handleToggleTheme } = use(ThemeContext);
   return (
@@ -36,7 +35,7 @@ export const DarkLight = () => {
           theme === "light" ? "text-gray-800" : "text-white"
         }`}
       >
-        Welcome everyone!
+        Welcome everyone
       </p>
       <button
         onClick={handleToggleTheme}

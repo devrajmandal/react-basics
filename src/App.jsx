@@ -5,8 +5,10 @@
 // import { EventProps } from "./components/EventProps";
 // import {EventPropagation} from "./components/EventPropagation";
 
-import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight";
-import { UseReducer } from "./components/hooks/UseReducer";
+import { ReducerComp } from "./components/hooks/UseReducer";
+
+// import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight";
+// import { UseReducer } from "./components/hooks/UseReducer";
 
 // import { BioContext, BioProvider } from "./components/hooks/ContextApi";
 // import { About } from "./components/hooks/ContextApi/About";
@@ -90,7 +92,10 @@ export const App = () => {
         <DarkLight/>
       </ThemeProvider> */}
 
-      <UseReducer/>
+      {/* <UseReducer/> */}
+
+
+      <ReducerComp/>
     </section>
   );
 };

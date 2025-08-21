@@ -6,6 +6,7 @@
 // import {EventPropagation} from "./components/EventPropagation";
 
 import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
+import MemoParentComponent from "./components/hooks/Memo/UseMemo";
 import { ReducerComp } from "./components/hooks/UseReducer";
 
 // import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight";
@@ -97,7 +98,9 @@ export const App = () => {
 
 
       {/* <ReducerComp/> */}
-      <ReactMemo/>
+      {/* <ReactMemo/> */}
+
+      <MemoParentComponent/>
     </section>
   );
 };
